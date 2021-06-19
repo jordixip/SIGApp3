@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIGApp3"
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             x:Class="SIGApp3.MainPage">
+
+    <StackLayout Orientation="Vertical">
+
+        <forms:SignaturePadCanvasView
+        BackgroundColor="Black"
+        WidthRequest="250"
+        HeightRequest="350"
+        StrokeColor="White"
+        StrokeWidth="3"
+        />
+
+        <Button Text="Guardar imagen"
+            Clicked="onclick" />
+
+    </StackLayout>
+
+</ContentPage>
